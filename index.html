@@ -27,7 +27,7 @@
     }
 
     /* Center word */
-    #wrap{
+    #wrap{ 
       position:relative;
       text-align:center;
       padding:24px;
@@ -183,7 +183,7 @@
 
   <div id="wrap">
     <div id="word">cope</div>
-    <div id="hint">click / tap</div>
+    <div id="hint">ca: not live yet..</div>
   </div>
 
   <div id="toast" role="status" aria-live="polite">
@@ -241,7 +241,7 @@
       toastSub.textContent = sub;
       toast.classList.add("show");
       clearTimeout(toastTimer);
-      toastTimer = setTimeout(() => toast.classList.remove("show"), 1300);
+      toastTimer = setTimeout(() => toast.classList.remove("show"), 2300);
     }
 
     function primaryClick(){
@@ -352,8 +352,6 @@
       }
     });
 
-    // Show a first-run prompt
-    setTimeout(() => showToast("cope.", "click / tap"), 400);
   </script>
 </body>
 </html>
